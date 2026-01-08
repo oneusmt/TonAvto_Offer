@@ -1,0 +1,24 @@
+import datetime
+from typing import Optional
+
+from pydantic import BaseModel, Field
+
+
+class OfferBase(BaseModel):
+    name: str = Field(..., description="Name of the offer")
+    description: Optional[str] = Field(None, description="Description of the offer")
+    number: int = Field(..., description="Number of the offer")
+    price: float = Field(..., description="Price of the offer")
+    """date_created: datetime"""
+    image_url: Optional[str] = Field(None, description="Image url of the offer")
+
+
+class OfferCreate(OfferBase):
+    pass
+
+
+class OfferResponse(OfferBase):
+    id: int = Field(..., description="ID of the offer")
+
+    class Config:
+        form_attributes = True

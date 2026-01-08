@@ -4,17 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26a9db1d-3f35-437b-9900-61d7e8d1c695" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/models/buy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/models/offer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TonAvto_Offer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TonAvto_Offer.iml" afterDir="false" />
+    <list default="true" id="26a9db1d-3f35-437b-9900-61d7e8d1c695" name="Changes" comment="add models for buy and offers">
+      <change afterPath="$PROJECT_DIR$/backend/src/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/repositories/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/repositories/buy_repository.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/repositories/offer_repository.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/routes/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/routes/buy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/routes/offer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/schemas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/schemas/buy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/schemas/offer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/services/buy_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/services/offer_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/models/buy.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/models/buy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,6 +89,15 @@
       <option name="presentableId" value="Default" />
       <updated>1766402422454</updated>
     </task>
+    <task id="LOCAL-00001" summary="add models for buy and offers">
+      <option name="closed" value="true" />
+      <created>1766576099163</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1766576099163</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -78,10 +105,31 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add models for buy and offers" />
+    <option name="LAST_COMMIT_MESSAGE" value="add models for buy and offers" />
   </component>
 </project>
