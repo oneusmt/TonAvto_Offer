@@ -15,4 +15,4 @@ class BuyResponse(BuyBase):
     id: int = Field(..., description="ID of the Buy")
 
     class Config:
-        form_attributes = True
+        from_attributes = True

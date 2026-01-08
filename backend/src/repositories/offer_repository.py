@@ -8,7 +8,7 @@ class OfferRepository:
     def __init__(self, db: Session):
         self.db = db
 
-    def get_all (self) -> List[Offer]:
+    def get_all_offers (self) -> List[Offer]:
         return self.db.query(Offer).all()
 
     def create(self, offer_data: OfferCreate) -> Offer:

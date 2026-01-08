@@ -21,4 +21,4 @@ class OfferResponse(OfferBase):
     id: int = Field(..., description="ID of the offer")
 
     class Config:
-        form_attributes = True
+        from_attributes = True

@@ -15,7 +15,7 @@ class Offer(Base):
     date_created = Column(DateTime, default=datetime.datetime.utcnow)
     image_url = Column(String)
 
-    buy = relationship("Buy", back_populates="offers")
+    """buy = relationship("Buy", back_populates="offers")"""
 
     def __repr__(self):
         return f"<Offer(id={self.id}, name={self.name}, price={self.price})>"

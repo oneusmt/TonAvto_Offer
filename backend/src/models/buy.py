@@ -7,10 +7,10 @@ class Buy(Base):
 
     id = Column(Integer, primary_key=True)
     name = Column(String)
-    offer_id = Column(Integer, ForeignKey("offer.id"))
+    """offer_id = Column(Integer, ForeignKey("offer.id"))"""
     price = Column(Float)
 
-    offer = relationship("Offer", back_populates="buy")
+    """offer = relationship("Offer", back_populates="buy")"""
 
     def __repr__(self):
         return f"<Buy(id={self.id}, name={self.name}, price={self.price})>"

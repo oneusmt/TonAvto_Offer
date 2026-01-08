@@ -12,7 +12,8 @@ router = APIRouter(
 )
 
 
-@router.get("/buy", response_model=List[BuyResponse], status_code=status.HTTP_200_OK)
-def get_buy(db: Session = Depends(get_db)):
+@router.get("", response_model=List[BuyResponse], status_code=status.HTTP_200_OK)
+def get_all_buys(db: Session = Depends(get_db)):
     service = BuyService(db)
-    return service.get_all_buys()
+    return service.get_all_buys(db)
+

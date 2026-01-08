@@ -8,8 +8,8 @@ class BuyRepository:
     def __init__(self, db: Session):
         self.db = db
 
-    def get_all(self) -> List[Buy]:
-        return self.db.query(Buy).options(joinedload(Buy.offers)).all()
+    def get_all_buys(self) -> List[Buy]:
+        return self.db.query(Buy).all()
 
     def create(self, buy_data: BuyCreate) -> Buy:
         db_buy = Buy(**buy_data.model_dump())
