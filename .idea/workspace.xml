@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26a9db1d-3f35-437b-9900-61d7e8d1c695" name="Changes" comment="fixed get routes and add post routes for offer">
+    <list default="true" id="26a9db1d-3f35-437b-9900-61d7e8d1c695" name="Changes" comment="add create, update and delete buy route">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/repositories/offer_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/repositories/offer_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/routes/offer.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes/offer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/schemas/offer.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/schemas/offer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/services/offer_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/offer_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +99,23 @@
       <option name="project" value="LOCAL" />
       <updated>1767893608770</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add update and delete route offer">
+      <option name="closed" value="true" />
+      <created>1767960342372</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1767960342372</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add create, update and delete buy route">
+      <option name="closed" value="true" />
+      <created>1767960678271</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1767960678271</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +150,8 @@
     <MESSAGE value="add models for buy and offers" />
     <MESSAGE value="create business logic" />
     <MESSAGE value="fixed get routes and add post routes for offer" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed get routes and add post routes for offer" />
+    <MESSAGE value="add update and delete route offer" />
+    <MESSAGE value="add create, update and delete buy route" />
+    <option name="LAST_COMMIT_MESSAGE" value="add create, update and delete buy route" />
   </component>
 </project>
