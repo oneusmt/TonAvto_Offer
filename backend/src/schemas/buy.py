@@ -1,3 +1,4 @@
+from typing import Optional
 from pydantic import BaseModel, Field
 
 
@@ -9,6 +10,12 @@ class BuyBase(BaseModel):
 
 class BuyCreate(BuyBase):
     pass
+
+
+class BuyUpdate(BaseModel):
+    name: Optional[str] = Field(None, description="Name of the Buy")
+    offer_id: Optional[int] = Field(None, description="ID of the Offer")
+    price: Optional[float] = Field(None, description="Price of the Buy")
 
 
 class BuyResponse(BuyBase):
