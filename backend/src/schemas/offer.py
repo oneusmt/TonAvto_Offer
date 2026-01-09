@@ -17,6 +17,14 @@ class OfferCreate(OfferBase):
     pass
 
 
+class OfferUpdate(BaseModel):
+    name: Optional[str] = Field(None, description="Name of the offer")
+    description: Optional[str] = Field(None, description="Description of the offer")
+    number: Optional[int] = Field(None, description="Number of the offer")
+    price: Optional[float] = Field(None, description="Price of the offer")
+    image_url: Optional[str] = Field(None, description="Image url of the offer")
+
+
 class OfferResponse(OfferBase):
     id: int = Field(..., description="ID of the offer")
 
