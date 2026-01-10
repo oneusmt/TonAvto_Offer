@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26a9db1d-3f35-437b-9900-61d7e8d1c695" name="Changes" comment="add create, update and delete buy route">
+    <list default="true" id="26a9db1d-3f35-437b-9900-61d7e8d1c695" name="Changes" comment="init frontend(react)">
+      <change afterPath="$PROJECT_DIR$/backend/src/models/sold.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/repositories/sold_repository.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/routes/sold.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/schemas/sold.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/services/sold_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/models/buy.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/models/buy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/models/offer.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/models/offer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/routes/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767960678271</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="init frontend(react)">
+      <option name="closed" value="true" />
+      <created>1767966336442</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1767966336442</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +169,7 @@
     <MESSAGE value="fixed get routes and add post routes for offer" />
     <MESSAGE value="add update and delete route offer" />
     <MESSAGE value="add create, update and delete buy route" />
-    <option name="LAST_COMMIT_MESSAGE" value="add create, update and delete buy route" />
+    <MESSAGE value="init frontend(react)" />
+    <option name="LAST_COMMIT_MESSAGE" value="init frontend(react)" />
   </component>
 </project>
