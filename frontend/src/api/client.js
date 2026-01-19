@@ -27,4 +27,13 @@ export const buysAPI = {
   delete: (id) => apiClient.delete(`/buy/${id}`),
 };
 
+// Sold API
+export const soldsAPI = {
+  getAll: () => apiClient.get('/sold'),
+  getById: (id) => apiClient.get(`/sold/${id}`),
+  create: (data) => apiClient.post('/sold', data),
+  update: (id, data) => apiClient.put(`/sold/${id}`, data),
+  delete: (id) => apiClient.delete(`/sold/${id}`),
+};
+
 export default apiClient;

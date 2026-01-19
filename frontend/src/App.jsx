@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import OfferList from './components/OfferList';
 import BuyList from './components/BuyList';
+import SoldList from './components/SoldList';
 import './App.css';
 
 function App() {
@@ -23,12 +24,19 @@ function App() {
           >
             Покупки
           </button>
+          <button
+            className={activeTab === 'solds' ? 'tab active' : 'tab'}
+            onClick={() => setActiveTab('solds')}
+          >
+            Продажи
+          </button>
         </nav>
       </header>
 
       <main className="app-main">
         {activeTab === 'offers' && <OfferList />}
         {activeTab === 'buys' && <BuyList />}
+        {activeTab === 'solds' && <SoldList />}
       </main>
     </div>
   );

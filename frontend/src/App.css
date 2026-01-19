@@ -93,7 +93,8 @@ body {
 }
 
 .offer-form,
-.buy-form {
+.buy-form,
+.sold-form {
   display: grid;
   gap: 20px;
 }

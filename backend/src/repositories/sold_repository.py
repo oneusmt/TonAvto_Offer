@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 from typing import Optional, List
 from ..models.sold import Sold
-from ..schemas.sold import SoldCreate
+from ..schemas.sold import SoldCreate, SoldUpdate
 
 
 class SoldRepository:
@@ -15,8 +15,21 @@ class SoldRepository:
         return self.db.query(Sold).filter(Sold.id == id).first()
 
     def create(self, sold_data: SoldCreate) -> Sold:
-        db_sold = Sold(**sold_data.model.dump())
+        db_sold = Sold(**sold_data.model_dump())
         self.db.add(db_sold)
+        self.db.commit()
+        self.db.refresh(db_sold)
+        return db_sold
+
+    def update(self, sold_id: int, sold_data: SoldUpdate) -> Optional[Sold]:
+        db_sold = self.get_by_id(sold_id)
+        if not db_sold:
+            return None
+        
+        update_data = sold_data.model_dump(exclude_unset=True)
+        for field, value in update_data.items():
+            setattr(db_sold, field, value)
+        
         self.db.commit()
         self.db.refresh(db_sold)
         return db_sold
