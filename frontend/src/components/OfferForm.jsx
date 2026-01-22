@@ -7,6 +7,7 @@ const OfferForm = ({ offer, onSubmit, onCancel }) => {
     number: offer?.number || '',
     price: offer?.price || '',
     image_url: offer?.image_url || '',
+    status: offer?.status || 'active',
   });
 
   const handleChange = (e) => {
@@ -72,6 +73,19 @@ const OfferForm = ({ offer, onSubmit, onCancel }) => {
           value={formData.image_url}
           onChange={handleChange}
         />
+      </div>
+      <div className="form-group">
+        <label>Статус:</label>
+        <select
+          name="status"
+          value={formData.status}
+          onChange={handleChange}
+          required
+        >
+          <option value="active">Активные</option>
+          <option value="thinking">Надо подумать</option>
+          <option value="bought">Выкупленные</option>
+        </select>
       </div>
       <div className="form-actions">
         <button type="submit" className="btn btn-primary">

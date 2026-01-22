@@ -4,15 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26a9db1d-3f35-437b-9900-61d7e8d1c695" name="Changes" comment="create sold">
+    <list default="true" id="26a9db1d-3f35-437b-9900-61d7e8d1c695" name="Changes" comment="fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/repositories/sold_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/repositories/sold_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/routes/sold.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes/sold.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/models/buy.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/models/buy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/models/offer.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/models/offer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/models/sold.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/models/sold.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/repositories/offer_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/repositories/offer_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/schemas/buy.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/schemas/buy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/schemas/offer.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/schemas/offer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/schemas/sold.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/schemas/sold.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/services/offer_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/offer_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/services/sold_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/sold_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/api/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/BuyForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BuyForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/BuyList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BuyList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/OfferForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/OfferForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/OfferList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/OfferList.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +145,23 @@
       <option name="project" value="LOCAL" />
       <updated>1768044222235</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixed">
+      <option name="closed" value="true" />
+      <created>1768814111600</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1768814111600</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fixed">
+      <option name="closed" value="true" />
+      <created>1769112937195</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1769112937195</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,6 +200,7 @@
     <MESSAGE value="add create, update and delete buy route" />
     <MESSAGE value="init frontend(react)" />
     <MESSAGE value="create sold" />
-    <option name="LAST_COMMIT_MESSAGE" value="create sold" />
+    <MESSAGE value="fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed" />
   </component>
 </project>

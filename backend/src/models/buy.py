@@ -10,9 +10,10 @@ class Buy(Base):
     name = Column(String)
     offer_id = Column(Integer, ForeignKey("offers.id"), nullable=False)
     price = Column(Float)
+    vlozheno = Column(Integer, default=0)  # вложено
 
     offer = relationship("Offer", back_populates="buys")
     solds = relationship("Sold", back_populates="buy")
 
     def __repr__(self):
-        return f"<Buy(id={self.id}, name={self.name}, price={self.price})>"
+        return f"<Buy(id={self.id}, name={self.name}, price={self.price}, vlozheno={self.vlozheno})>"

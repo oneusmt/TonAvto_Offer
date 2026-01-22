@@ -303,6 +303,51 @@ body {
   font-size: 1.1rem;
 }
 
+.filter-container {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-filter {
+  padding: 8px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.profit-positive {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.profit-negative {
+  color: #dc3545;
+  font-weight: 600;
+}
+
 @media (max-width: 768px) {
   .cards-grid {
     grid-template-columns: 1fr;

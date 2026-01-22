@@ -6,6 +6,7 @@ class SoldBase(BaseModel):
     name: str = Field(..., description="Name of the Sold")
     buy_id: int = Field(..., description="ID of the Buy")
     price: float = Field(..., description="Price of the Sold")
+    profit: float = Field(default=0.0, description="Profit of the Sold")
 
 
 class SoldCreate(SoldBase):
@@ -16,6 +17,7 @@ class SoldUpdate(BaseModel):
     name: Optional[str] = Field(None, description="Name of the Sold")
     buy_id: Optional[int] = Field(None, description="ID of the Buy")
     price: Optional[float] = Field(None, description="Price of the Sold")
+    profit: Optional[float] = Field(None, description="Profit of the Sold")
 
 
 class SoldResponse(SoldBase):

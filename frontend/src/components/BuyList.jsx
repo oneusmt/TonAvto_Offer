@@ -112,6 +112,7 @@ const BuyList = () => {
               <th>Название</th>
               <th>ID Предложения</th>
               <th>Цена</th>
+              <th>Вложено</th>
               <th>Действия</th>
             </tr>
           </thead>
@@ -122,6 +123,7 @@ const BuyList = () => {
                 <td>{buy.name}</td>
                 <td>{buy.offer_id}</td>
                 <td>{buy.price} ₽</td>
+                <td>{buy.vlozheno || 0} ₽</td>
                 <td>
                   <button
                     onClick={() => setEditingBuy(buy)}

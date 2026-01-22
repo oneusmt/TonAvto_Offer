@@ -7,6 +7,7 @@ const BuyForm = ({ buy, onSubmit, onCancel }) => {
     name: buy?.name || '',
     offer_id: buy?.offer_id || '',
     price: buy?.price || '',
+    vlozheno: buy?.vlozheno || 0,
   });
 
   useEffect(() => {
@@ -26,7 +27,9 @@ const BuyForm = ({ buy, onSubmit, onCancel }) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
-      [name]: name === 'offer_id' || name === 'price' ? (value === '' ? '' : Number(value)) : value,
+      [name]: name === 'offer_id' || name === 'price' || name === 'vlozheno' 
+        ? (value === '' ? '' : Number(value)) 
+        : value,
     }));
   };
 
@@ -71,6 +74,18 @@ const BuyForm = ({ buy, onSubmit, onCancel }) => {
           value={formData.price}
           onChange={handleChange}
           step="0.01"
+          required
+        />
+      </div>
+      <div className="form-group">
+        <label>Вложено:</label>
+        <input
+          type="number"
+          name="vlozheno"
+          value={formData.vlozheno}
+          onChange={handleChange}
+          min="0"
+          step="1"
           required
         />
       </div>
