@@ -1,6 +1,12 @@
 import { useState } from 'react';
 
 const OfferForm = ({ offer, onSubmit, onCancel }) => {
+  const formatDateForInput = (dateStr) => {
+    if (!dateStr) return '';
+    const d = new Date(dateStr);
+    return d.toISOString().slice(0, 10);
+  };
+
   const [formData, setFormData] = useState({
     name: offer?.name || '',
     description: offer?.description || '',
@@ -8,6 +14,7 @@ const OfferForm = ({ offer, onSubmit, onCancel }) => {
     price: offer?.price || '',
     image_url: offer?.image_url || '',
     status: offer?.status || 'active',
+    callback_date: formatDateForInput(offer?.callback_date) || '',
   });
 
   const handleChange = (e) => {
@@ -20,7 +27,10 @@ const OfferForm = ({ offer, onSubmit, onCancel }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit(formData);
+    const data = { ...formData };
+    if (!data.callback_date) data.callback_date = null;
+    else data.callback_date = new Date(data.callback_date + 'T12:00:00').toISOString();
+    onSubmit(data);
   };
 
   return (
@@ -86,6 +96,15 @@ const OfferForm = ({ offer, onSubmit, onCancel }) => {
           <option value="thinking">Надо подумать</option>
           <option value="bought">Выкупленные</option>
         </select>
+      </div>
+      <div className="form-group">
+        <label>Дата повторного звонка:</label>
+        <input
+          type="date"
+          name="callback_date"
+          value={formData.callback_date}
+          onChange={handleChange}
+        />
       </div>
       <div className="form-actions">
         <button type="submit" className="btn btn-primary">

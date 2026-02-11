@@ -10,7 +10,7 @@ class Buy(Base):
     name = Column(String)
     offer_id = Column(Integer, ForeignKey("offers.id"), nullable=False)
     price = Column(Float)
-    vlozheno = Column(Integer, default=0)  # вложено
+    vlozheno = Column(Float)  # вложено
 
     offer = relationship("Offer", back_populates="buys")
     solds = relationship("Sold", back_populates="buy")

@@ -154,6 +154,18 @@ const OfferList = () => {
                     <span>Номер: {offer.number}</span>
                     <span className="price">Цена: {offer.price} ₽</span>
                   </div>
+                  <div className="card-dates">
+                    {offer.date_created && (
+                      <span className="date-created">
+                        Создано: {new Date(offer.date_created).toLocaleDateString('ru-RU')}
+                      </span>
+                    )}
+                    {offer.callback_date && (
+                      <span className="callback-date">
+                        Повторный звонок: {new Date(offer.callback_date).toLocaleDateString('ru-RU')}
+                      </span>
+                    )}
+                  </div>
                   <div className="card-actions">
                     <button
                       onClick={() => setEditingOffer(offer)}

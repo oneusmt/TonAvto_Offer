@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from src.config import settings
 from src.database import init_db
-from src.routes import offer_router, buy_router, sold_router
+from src.routes import auth_router, offer_router, buy_router, sold_router
 
 
 app = FastAPI(
@@ -25,6 +25,7 @@ app.add_middleware(
 app.mount("/static", StaticFiles(directory=settings.static_dir), name="static")
 
 
+app.include_router(auth_router)
 app.include_router(offer_router)
 app.include_router(buy_router)
 app.include_router(sold_router)

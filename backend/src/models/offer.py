@@ -21,6 +21,7 @@ class Offer(Base):
     number = Column(Integer)
     price = Column(Float)
     date_created = Column(DateTime, default=datetime.datetime.utcnow)
+    callback_date = Column(DateTime, nullable=True)  # дата повторного звонка
     image_url = Column(String)
     status = Column(Enum(OfferStatus, native_enum=False, length=20), default=OfferStatus.ACTIVE, nullable=False)
 

@@ -10,9 +10,9 @@ class OfferBase(BaseModel):
     description: Optional[str] = Field(None, description="Description of the offer")
     number: int = Field(..., description="Number of the offer")
     price: float = Field(..., description="Price of the offer")
-    """date_created: datetime"""
     image_url: Optional[str] = Field(None, description="Image url of the offer")
     status: str = Field(default="active", description="Status of the offer: active, thinking, bought")
+    callback_date: Optional[datetime.datetime] = Field(None, description="Дата повторного звонка")
 
 
 class OfferCreate(OfferBase):
@@ -26,10 +26,12 @@ class OfferUpdate(BaseModel):
     price: Optional[float] = Field(None, description="Price of the offer")
     image_url: Optional[str] = Field(None, description="Image url of the offer")
     status: Optional[str] = Field(None, description="Status of the offer: active, thinking, bought")
+    callback_date: Optional[datetime.datetime] = Field(None, description="Дата повторного звонка")
 
 
 class OfferResponse(OfferBase):
     id: int = Field(..., description="ID of the offer")
+    date_created: Optional[datetime.datetime] = Field(None, description="Дата создания заявки")
 
     class Config:
         from_attributes = True

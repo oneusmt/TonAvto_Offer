@@ -4,11 +4,13 @@ from typing import List
 from ..database import get_db
 from ..services.sold_service import SoldService
 from ..schemas.sold import SoldResponse, SoldCreate, SoldUpdate
+from ..security import require_token
 
 
 router = APIRouter(
     prefix="/api/sold",
-    tags=["sold"]
+    tags=["sold"],
+    dependencies=[Depends(require_token)],
 )
 
 

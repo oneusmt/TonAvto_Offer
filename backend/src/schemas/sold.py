@@ -6,7 +6,7 @@ class SoldBase(BaseModel):
     name: str = Field(..., description="Name of the Sold")
     buy_id: int = Field(..., description="ID of the Buy")
     price: float = Field(..., description="Price of the Sold")
-    profit: float = Field(default=0.0, description="Profit of the Sold")
+    profit: float = Field(default=0, description="Profit of the Sold")
 
 
 class SoldCreate(SoldBase):

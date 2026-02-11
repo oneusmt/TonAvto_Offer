@@ -12,6 +12,9 @@ class Settings(BaseSettings):
     ]
     static_dir: str = "static"
     images_dir: str = "static/images"
+    auth_username: str = "oneusmt"
+    auth_password: str = "da0xF-OzM_jMev"
+    auth_token_ttl_hours: int = 12
 
     class Config:
         env_file = ".env"

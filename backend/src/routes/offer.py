@@ -4,11 +4,13 @@ from typing import List
 from ..database import get_db
 from ..services.offer_service import OfferService
 from ..schemas.offer import OfferResponse, OfferCreate, OfferUpdate
+from ..security import require_token
 
 
 router = APIRouter(
     prefix="/api/offer",
-    tags=["offers"]
+    tags=["offers"],
+    dependencies=[Depends(require_token)],
 )
 
 

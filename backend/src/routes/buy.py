@@ -4,11 +4,13 @@ from typing import List
 from ..database import get_db
 from ..services.buy_service import BuyService
 from ..schemas.buy import BuyResponse, BuyCreate, BuyUpdate
+from ..security import require_token
 
 
 router = APIRouter(
     prefix="/api/buy",
-    tags=["buy"]
+    tags=["buy"],
+    dependencies=[Depends(require_token)],
 )
 
 
